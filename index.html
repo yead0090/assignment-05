@@ -13,14 +13,14 @@
 
 <body>
   <!-- sticky position -->
-  <div class="sticky">
+  <div class="z-1">
     <!-- navbar -->
-    <nav>
+    <nav class="">
       <div class="navbar bg-[#F9F7F3] flex justify-between">
         <div class="flex-none">
 
           <button class=" bg-[#B4F461] rounded-md">
-            <p class="font-bold px-3 py-2">Blog</p>
+            <p class="font-bold px-3 py-2"><a href="./blog.html">Blog</a></p>
           </button>
         </div>
         <div class="">
@@ -28,7 +28,7 @@
         </div>
         <div class="flex-none">
 
-          <p class="text-[#11111179] font-bold"><span id="balance">5500</span>bdt</p>
+          <p class="text-[#111111B3] font-bold"><span id="balance">5500</span>BDT</p>
         </div>
       </div>
     </nav>
@@ -38,6 +38,25 @@
       <button id="history-tab-btn" class="btn ">History</button>
     </div>
   </div>
+  <!-- modal -->
+  <div id="s-modal" class="text-center">
+    <!-- Open the modal using ID.showModal() method -->
+    
+    <dialog id="my_modal_1" class="modal">
+      <div class="modal-box">
+        <p class="text-4xl font-extrabold ">Congrates!</p>
+        <p class="py-4">You have donated for humankind</p>
+        <p class="font-extrabold">succesfully</p>
+        <div class="modal-action">
+          <form method="dialog">
+            <!-- if there is a button in form, it will close the modal -->
+            <button class="btn">Close Confirmation</button>
+          </form>
+        </div>
+      </div>
+    </dialog>
+  </div>
+
   <!-- donation-tab -->
   <div id="donation-tab" class="mb-20">
     <!-- Donate for Flood at Noakhali, Bangladesh -->
@@ -100,15 +119,15 @@
       </div>
     </div>
   </div>
-  <script src="./functions.js"></script>
+
 
   <!-- history-tab -->
   <div id="history-tab" class="hidden">
-   
+
   </div>
 
 
-
+  <script src="./functions.js"></script>
 </body>
 
 
