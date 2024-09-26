@@ -1,3 +1,5 @@
+
+// donation buttons
 const btn1 = document.getElementById("btn-1");
 const btn2 = document.getElementById("btn-2");
 const btn3 = document.getElementById("btn-3");
@@ -5,13 +7,13 @@ const btn3 = document.getElementById("btn-3");
 
 
 
-// common function
+// common functions
 function getInputFieldValueById(id) {
     const inputValue = document.getElementById(id).value;
     return inputValue;
 }
 
-function getInnerTextById(id){
+function getInnerTextById(id) {
     const textValue = document.getElementById(id).innerText;
     return textValue;
 }
@@ -20,7 +22,7 @@ function getInnerTextById(id){
 
 
 
-
+// tab and tab buttons
 const donTabBtn = document.getElementById("donate-tab-btn");
 const histTabBtn = document.getElementById("history-tab-btn");
 const donTab = document.getElementById("donation-tab");
@@ -33,7 +35,7 @@ const histTab = document.getElementById("history-tab");
 
 
 
-
+// donation tab
 btn1.addEventListener("click", function () {
     const input1 = Number(getInputFieldValueById("input-1"));
     let result1 = Number(getInnerTextById("result-1"));
@@ -59,7 +61,7 @@ btn1.addEventListener("click", function () {
 
 btn2.addEventListener("click", function () {
     const input2 = Number(getInputFieldValueById("input-2"));
-    let result2 =  Number(getInnerTextById("result-2"));
+    let result2 = Number(getInnerTextById("result-2"));
     const balance = Number(getInnerTextById("balance"));
     if (input2 <= 0) {
         alert("Invalid amount")
@@ -79,7 +81,7 @@ btn2.addEventListener("click", function () {
 
 btn3.addEventListener("click", function () {
     const input3 = Number(getInputFieldValueById("input-3"));
-    let result3 =  Number(getInnerTextById("result-3"));
+    let result3 = Number(getInnerTextById("result-3"));
     const balance = Number(getInnerTextById("balance"));
     if (input3 <= 0) {
         alert("Invalid amount")
@@ -96,6 +98,8 @@ btn3.addEventListener("click", function () {
     return;
 })
 
+// history tab button
+
 histTabBtn.addEventListener("click", function () {
     const histTab = document.getElementById("history-tab");
     const donTab = document.getElementById("donation-tab");
@@ -111,7 +115,7 @@ histTabBtn.addEventListener("click", function () {
 
 
 
-
+// donation tab button
 
 donTabBtn.addEventListener("click", function () {
     const donTab = document.getElementById("donation-tab");
@@ -125,11 +129,11 @@ donTabBtn.addEventListener("click", function () {
 })
 
 
-// historydiv
+// historytab
 
 btn1.addEventListener("click", function () {
-    const input1 = Number(document.getElementById("input-1").value);
-    const balance = Number(document.getElementById("balance").innerText)
+    const input1 = Number(getInputFieldValueById("input-1"));
+    const balance = Number(getInnerTextById("balance"))
     if (input1 <= 0) {
         return;
     }
@@ -155,8 +159,8 @@ btn1.addEventListener("click", function () {
 
 
 btn2.addEventListener("click", function () {
-    const input2 = Number(document.getElementById("input-2").value);
-    const balance = Number(document.getElementById("balance").innerText)
+    const input2 = Number(getInputFieldValueById("input-2"));
+    const balance = Number(getInnerTextById("balance"))
     if (input2 <= 0) {
         return;
     }
@@ -182,8 +186,8 @@ btn2.addEventListener("click", function () {
 
 
 btn3.addEventListener("click", function () {
-    const input3 = Number(document.getElementById("input-3").value);
-    const balance = Number(document.getElementById("balance").innerText)
+    const input3 = Number(getInputFieldValueById("input-3"));
+    const balance = Number(getInnerTextById("balance"))
     if (input3 <= 0) {
         return;
     }
