@@ -11,11 +11,11 @@
   <title>Donation</title>
 </head>
 
-<body>
+<body class="">
   <!-- sticky position -->
-  <div class="z-1">
+  <div class="sticky top-0 bg-transparent backdrop-blur-sm z-10">
     <!-- navbar -->
-    <nav class="">
+    <nav class="border-2 border-red-500">
       <div class="navbar bg-[#F9F7F3] flex justify-between">
         <div class="flex-none">
 
@@ -33,7 +33,7 @@
       </div>
     </nav>
     <!-- donation/history buttons -->
-    <div class="flex justify-center mt-7 gap-3 ">
+    <div class="flex justify-center mt-7 gap-3">
       <button id="donate-tab-btn" class="btn bg-[#B4F461]">Donate</button>
       <button id="history-tab-btn" class="btn ">History</button>
     </div>
@@ -41,7 +41,7 @@
   <!-- modal -->
   <div id="s-modal" class="text-center">
     <!-- Open the modal using ID.showModal() method -->
-    
+
     <dialog id="my_modal_1" class="modal">
       <div class="modal-box">
         <p class="text-4xl font-extrabold ">Congrates!</p>
@@ -62,7 +62,7 @@
     <!-- Donate for Flood at Noakhali, Bangladesh -->
     <div class="hero  w-4/5 mx-auto mt-10">
       <div class="hero-content flex-col lg:flex-row">
-        <img src="assets/noakhali.png" class="max-w-md rounded-lg shadow-2xl" />
+        <img src="assets/noakhali.png" class="lg:max-w-md rounded-lg shadow-2xl" />
         <div>
           <p class="p-3 w-36 rounded-md bg-base-300"><span id="result-1">1000</span>bdt</p>
           <h1 class="text-2xl font-bold">Donate for Flood at Noakhali, Bangladesh</h1>
@@ -81,7 +81,7 @@
     <!-- Donate for Flood Relief in Feni,Bangladesh -->
     <div class="hero  w-4/5 mx-auto mt-10">
       <div class="hero-content flex-col lg:flex-row">
-        <img src="assets/feni.png" class="max-w-md rounded-lg shadow-2xl" />
+        <img src="assets/feni.png" class="lg:max-w-md rounded-lg shadow-2xl" />
         <div>
           <p class="p-3 w-36 rounded-md bg-base-300">৳<span id="result-2">1000</span>bdt</p>
           <h1 class="text-2xl font-bold">Donate for Flood Relief in Feni,Bangladesh</h1>
@@ -101,7 +101,7 @@
     <!-- Aid for Injured in the Quota Movement -->
     <div class="hero  w-4/5 mx-auto mt-10">
       <div class="hero-content flex-col lg:flex-row">
-        <img src="assets/quota-protest.png" class="max-w-md rounded-lg shadow-2xl" />
+        <img src="assets/quota-protest.png" class="lg:max-w-md rounded-lg shadow-2xl" />
         <div>
           <p class="p-3 w-36 rounded-md bg-base-300"><span id="result-3">1000</span> bdt</p>
           <h1 class="text-2xl font-bold">Aid for Injured in the Quota Movement</h1>
